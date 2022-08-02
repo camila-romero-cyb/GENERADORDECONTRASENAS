@@ -1,0 +1,256 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bebas Neue';
+    background-color: rgb(39, 38, 38);
+}
+
+/*COMIENZO DEL HEADER*/
+
+h1{
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    padding-top: 30px;
+    padding-left: 20px;
+    display: block;
+}
+
+h2{
+    color:rgb(43, 44, 44) ;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;   
+    background-color: #D2FF52;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(42, 82, 1);
+}
+
+nav{
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.title{
+    display: flex; 
+}
+
+.item-nav{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(43, 44, 44); 
+    padding:10px 10px 6px; 
+    border-radius: 5px;
+    text-align: right;
+}
+
+.item-nav:hover{
+    background-color: rgb(164, 230, 32);
+    padding: 6px 10px 6px;
+    border-radius: 5px;
+    color: rgb(43, 44, 44); 
+}
+
+/*SECCIONES*/
+
+#balance{
+    margin: 10px;
+    margin-top: 50px;     
+}
+
+.input-balance{
+    border: none;
+    background-color: rgb(239, 244, 239);
+}
+
+input{
+    width: 80%;
+    height: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px; 
+}
+
+#total-balance , #filters{
+    background-color: rgb(239, 244, 239);
+    border: 1px solid rgb(160, 158, 158);
+    box-shadow: 1px 1px 10px 1px rgb(69, 69, 69);
+    border-radius: 5px;
+    width: 250px;
+    padding: 20px;
+    margin-top: 20px;  
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropdown-item:hover{
+    background-color: #D2FF52;
+}
+
+.dropdown-item:active{
+    color: rgb(43, 44, 44); 
+}
+
+.dropdown{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    margin-bottom: 20px;
+    background-color: rgb(39, 38, 38);
+    border: black ;
+    color: rgb(239, 244, 239);   
+}
+
+#operations , #categories , #report{
+    background-color: rgb(239, 244, 239);
+    border: 1px solid rgb(160, 158, 158);
+    box-shadow: 1px 1px 10px 1px rgb(69, 69, 69);
+    border-radius: 5px;
+    width: 600px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+#newoperation{
+    background-color: rgb(239, 244, 239);  
+}
+
+.form-select{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#box-newoperation{
+    margin-left: 300px;
+    padding: 50px;
+    width: 700px;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#operations{
+    margin-top: 50px;
+    text-align: center;
+}
+
+ img{
+    width: 300px;
+    padding: 60px 0px 60px 0px;
+    align-items: center;  
+}
+
+.operation{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D2FF52;
+    display: block;
+    color: rgb(43, 44, 44);
+    padding: 6px 10px 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.operation:hover{
+    background-color: rgb(164, 230, 32);
+    color: rgb(43, 44, 44); 
+}
+
+h4, .information{
+   text-align: center;
+    margin-top: 10px;
+}
+
+#categories , #report{
+    margin: auto;
+    margin-top: 50px;
+    width: 800px;
+}
+
+#report img{
+    width: 350px;
+    margin: 70px 0px 50px 200px;
+}
+
+ .button-operation{
+    background-color: rgb(43, 44, 44);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 35px;
+    width: 120px;
+    justify-content: left;
+    border:none;
+    border-radius: 15px; 
+    margin-top: 20px;
+ }  
+
+.button-operation:hover{
+    background-color: rgb(164, 230, 32);
+    color: rgb(43, 44, 44);
+}
+
+.button-categories{
+    background-color: rgb(43, 44, 44);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 35px;
+    width: 120px;
+    border:none;
+    border-radius: 15px;
+    margin-left: 20px;    
+}
+
+.button-categories:hover{
+    background-color: rgb(164, 230, 32);
+    color: rgb(43, 44, 44); 
+}
+
+#date , #categories-title{
+     margin-top: 20px;
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width:1024px){
+    nav{
+        display: none;
+    }
+
+    #main{
+        display: block;
+    }
+    
+    #total-balance , #filters , #operations{
+        width: 100%;
+    }
+
+    #operations{
+        margin: 0;
+    }
+
+    .label{
+        flex-direction: column;
+    }
+
+    label{
+        width: 100%;
+    }
+}
